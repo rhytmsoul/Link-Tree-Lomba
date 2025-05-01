@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #EEE2DF;
+    background-image:
+      radial-gradient(#6da0e1 1px, transparent 1px),
+      radial-gradient(#6da0e1 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .satu {
+    font-family: Lucida Sans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #0c3c83
+  }
+  
+  
+  div.gallery:hover {
+    opacity: 80%;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 10px;
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .responsive {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .responsive {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
